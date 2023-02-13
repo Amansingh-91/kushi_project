@@ -1,0 +1,158 @@
+
+<html>
+    <title>Coordinator login </title>
+    <style>
+        *{background-image: url(" ");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+         } 
+         body{  
+                background-image: url("sushant university blur.jpg");
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                
+             }
+             .wrapper{
+                width: 380px;
+                background: #fff;
+                text-align: center;
+                border-radius: 5px;
+                padding: 40px 30px 50px 30px;
+             }
+             .wrapper header{
+                font-size: 35px;
+                font-weight: 600;
+             }
+             .wrapper form{
+                margin: 40px 0;
+             }
+            form .field{
+                width: 100%;
+                margin-bottom: 20px
+            }
+            form .field.shake{
+                animation: shake 0.3s ease-in-out infinite;
+            }
+            @keyframes shake {
+                0%, 100%{
+                    margin-left: 0;
+                }
+                20%, 80%{
+                    margin-left: -12px;
+                }
+                40%, 60%{
+                    margin-left: 12px;
+                }
+            }
+            form .field .input-area{
+                position: relative;
+            }
+             form input{
+                height: 50px;
+                width: 100%;
+                outline: none;
+                padding: 0 15px;
+                font-size: 18px;
+                border-radius: 5px;
+                border: 1px solid #bfbfbf;
+                border-bottom-width: 2px;
+             }
+             form input::placeholder{
+                color: #bfbfbf;
+                font-size: 17px;
+             }
+             form .field i{
+                position: absolute;
+                top: 50%;
+                font-size: 18px;
+                pointer-events: none;
+                transform: translateY(-50%);
+             }
+             form .field icon{
+                left: 15px;
+                color: #bfbfbf;
+             }
+             form .field .error-icon{
+                right: 15px;
+                color: #dc3545;
+             }
+             form .field .error-txt{
+                color: #dc3545;
+                margin-top: 5px;
+                text-align: left;
+             }
+             form .field .error{
+                display: none;
+             }
+             form .pass-link{
+                text-align: left;
+                margin-top: -10px;
+             }
+             .wrapper a{
+                
+                color: gray;
+                text-decoration: none;
+             }
+             .wrapper a:hover{
+                text-decoration: underline;
+             }
+             form input[type="submit"]{
+                margin-top: 30px;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                background: red;
+             }
+             input[type="submit"]:hover{
+                background: red;
+                transition: background 0.2s ease;
+             }
+         </style>
+
+    <body>
+        <div class="wrapper">
+            <header>Coordinator Login Form</header>
+            <form action="#">
+                <label>   
+                    
+                    </label> <br>     
+                    <select>  
+                    <option value="School">School</option>  
+                    <option value="SET">SET</option>  
+                    <option value="SOD">SOD</option>  
+                    <option value="SAA">SAA</option>  
+                    <option value="SPD">SPD</option>  
+                    <option value="SOB">SOB</option>  
+                    <option value="VATEL">VATEL</option>
+                    <option value="SOL">SOL</option>  
+                    <option value="SHS">SHS</option>  
+                    
+                    </select> <br><br>
+                <div class="field email">
+                    <div class="input-area">
+                        <input type="text" placeholder="email address">
+                        <i class="icon fas fa-envelope"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-text">Email can't be blank</div>
+                </div>
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="text" placeholder="password">
+                        <i class="icon fas fa-envelope"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-text">Password can't be blank</div>
+                </div>
+                <div class="pass-link"><a href="#">Forgot Password</a></div>
+                <input type="submit" value="Login">
+            </form>
+            <div class="signup-link">Not yet member?<a href="CoodinatorRegistration.html">Signup Now</a></div>
+                
+        </div>
+    </body>
+</html>
